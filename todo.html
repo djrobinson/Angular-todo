@@ -1,0 +1,7 @@
+<br>
+<br>
+<br>
+<h1>Todo</h1>
+<div ng-repeat="todo in todos">
+  <input type="checkbox" ng-click="done(todo.id)"><span ng-class="{'done-true': todo.done === true}">{{todo.title}}</span>
+</div>
